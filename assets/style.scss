@@ -1,0 +1,38 @@
+body {
+  font-family: 'DotGothic16', sans-serif;
+  background: #fff;
+}
+
+footer {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.button {
+  background: #169fca;
+  display: inline-block;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 26px;
+  text-decoration: none;
+  border: none;
+  line-height: 1;
+  font-weight: 700;
+  font-family: 'DotGothic16';
+  opacity: 1;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  @include mq() {
+    font-size: 20px;
+  }
+}

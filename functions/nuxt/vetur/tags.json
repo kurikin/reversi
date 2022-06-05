@@ -1,0 +1,11 @@
+{
+  "AdminSquare": {
+    "description": "Auto imported from components/AdminSquare.vue"
+  },
+  "Message": {
+    "description": "Auto imported from components/Message.vue"
+  },
+  "Square": {
+    "description": "Auto imported from components/Square.vue"
+  }
+}
