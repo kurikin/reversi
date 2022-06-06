@@ -1,13 +1,10 @@
-<br />
-<div align="center">
-  <img src="reversi.png" alt="Logo" height="150">
-  <h2 align="center">Reversi</h2>
-  
-  ![Nuxt.js](https://img.shields.io/badge/Nuxt.js-34485a.svg?style=flat-square&logo=nuxtdotjs)
-  ![TypeScript](https://img.shields.io/badge/TypeScript-34485a.svg?style=flat-square&logo=typescript)
-  ![Firebase](https://img.shields.io/badge/Firebase-34485a.svg?style=flat-square&logo=firebase)
-  <br />
-  Collaborator: [OhVIton](https://github.com/OhVIton)
+<h1>Reversi</h1>
+
+![Nuxt.js](https://img.shields.io/badge/Nuxt.js-34485a.svg?style=flat-square&logo=nuxtdotjs)
+![TypeScript](https://img.shields.io/badge/TypeScript-34485a.svg?style=flat-square&logo=typescript)
+![Firebase](https://img.shields.io/badge/Firebase-34485a.svg?style=flat-square&logo=firebase)
+
+Collaborator: [OhVIton](https://github.com/OhVIton)
 </div>
 
 <!-- ABOUT THE PROJECT -->
