@@ -11,18 +11,14 @@
         />
       </div>
 
-      <div v-show="!isAudience" class="turn">{{ turnText() }}</div>
+      <div class="turn">{{ turnText() }}</div>
 
       <!-- 対局情報 -->
       <div class="match-info">
         <div class="room-id">ルーム: {{ data.roomId }}</div>
         <div class="disk-count">{{ countDisksText() }}</div>
-        <div v-show="!isAudience" class="your-color">
-          あなたの色: {{ colorInJapanese(myDisk) }}
-        </div>
-        <div v-show="!isAudience" class="rival">
-          対戦相手: {{ rivalText(rivalId) }}
-        </div>
+        <div class="your-color">あなたの色: {{ colorInJapanese(myDisk) }}</div>
+        <div class="rival">対戦相手: {{ rivalText(rivalId) }}</div>
         <Message />
       </div>
 
@@ -63,21 +59,12 @@ export default {
   },
   computed: {
     ...mapState(['data']),
-    ...mapGetters([
-      'board',
-      'myTurn',
-      'isHost',
-      'myDisk',
-      'rivalId',
-      'isAudience',
-    ]),
+    ...mapGetters(['board', 'myTurn', 'isHost', 'myDisk', 'rivalId']),
   },
   watch: {
     '$store.state.data': {
       handler() {
-        if (!this.isAudience) {
-          this.init();
-        }
+        this.init();
       },
       immediate: true,
     },

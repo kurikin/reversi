@@ -64,7 +64,7 @@ export default {
     ...mapState(['data']),
   },
   methods: {
-    ...mapMutations(['setData', 'setAudience', 'setHost']),
+    ...mapMutations(['setData', 'setHost']),
     generateGuestId(hostId) {
       for (let i = 0; i < 2; i++) {
         const guestId = createUserId();
@@ -116,6 +116,9 @@ export default {
       if (this.inputRoomId === '') {
         this.errorHandle('idを入力してください');
         return;
+      } else if (this.userName === '') {
+        this.errorHandle('ユーザー名を入力してください');
+        return;
       }
 
       const roomId = this.inputRoomId;
@@ -126,11 +129,7 @@ export default {
       }
       const guestId = this.generateGuestId(roomInfo.host);
 
-      if (roomInfo.guest !== '') {
-        this.errorHandle('観戦モードで参加します');
-        this.setAudience();
-        this.$router.push('/game');
-      } else if (!guestId) {
+      if (!guestId) {
         this.errorHandle('もう一度お試しください');
       } else {
         roomInfo.guest = guestId;
