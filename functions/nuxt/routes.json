@@ -2,36 +2,29 @@
   {
     "name": "admin",
     "path": "/admin",
-    "component": "/Users/riku/Desktop/pl-reversi/pages/admin.vue",
+    "component": "/Users/riku/Desktop/reversi/pages/admin.vue",
     "chunkName": "pages/admin",
-    "_name": "_1d1f2143"
+    "_name": "_df166a1c"
   },
   {
     "name": "game",
     "path": "/game",
-    "component": "/Users/riku/Desktop/pl-reversi/pages/game.vue",
+    "component": "/Users/riku/Desktop/reversi/pages/game.vue",
     "chunkName": "pages/game",
-    "_name": "_8f2b81a4"
+    "_name": "_141db8c2"
   },
   {
     "name": "handicap",
     "path": "/handicap",
-    "component": "/Users/riku/Desktop/pl-reversi/pages/handicap.vue",
+    "component": "/Users/riku/Desktop/reversi/pages/handicap.vue",
     "chunkName": "pages/handicap",
-    "_name": "_37d159f4"
-  },
-  {
-    "name": "login",
-    "path": "/login",
-    "component": "/Users/riku/Desktop/pl-reversi/pages/login.vue",
-    "chunkName": "pages/login",
-    "_name": "_95511f46"
+    "_name": "_5502c436"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/riku/Desktop/pl-reversi/pages/index.vue",
+    "component": "/Users/riku/Desktop/reversi/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_28a06574"
+    "_name": "_5f0576f5"
   }
 ]
