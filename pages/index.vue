@@ -81,6 +81,11 @@ export default {
       alert(message);
     },
     async createRoom() {
+      if (this.userName === '') {
+        this.errorHandle('ユーザー名を入力してください');
+        return;
+      }
+
       const roomId = createRoomId();
       const roomInfo = await getRoomInfo(roomId);
 
