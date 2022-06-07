@@ -38,9 +38,8 @@ Nuxt.js と Firebase を使って制作したオンライン対戦型オセロ�
 
 ## スクリーンショット
 <div>
-  <img width="300px" src="screenshot-1.png" />
-  <img width="300px" src="screenshot-2.png" />
-  <img width="300px" src="screenshot-3.png" />
+  <img width="43%" src="screenshot-1.png" />
+  <img width="43%" src="screenshot-2.png" />
 </div>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
