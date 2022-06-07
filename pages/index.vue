@@ -45,36 +45,31 @@
           @click="enterRoom"
         />
       </div>
-
-      <button class="button" @click="goAdminPage">管理者ページへ</button>
     </div>
   </div>
 </template>
 
 <script>
-import { mapState, mapMutations } from "vuex";
-import { initBoard, createUserId, createRoomId } from "~/scripts/reversi";
-import { getRoomInfo, setRoomInfo } from "~/scripts/repository";
+import { mapState, mapMutations } from 'vuex';
+import { initBoard, createUserId, createRoomId } from '~/scripts/reversi';
+import { getRoomInfo, setRoomInfo } from '~/scripts/repository';
 export default {
   data() {
     return {
-      inputRoomId: "",
-      userName: "",
+      inputRoomId: '',
+      userName: '',
     };
   },
   computed: {
-    ...mapState(["data"]),
+    ...mapState(['data']),
   },
   methods: {
-    ...mapMutations(["setData", "setAudience", "setHost"]),
+    ...mapMutations(['setData', 'setAudience', 'setHost']),
     generateGuestId(hostId) {
       for (let i = 0; i < 2; i++) {
         const guestId = createUserId();
         if (guestId !== hostId) return guestId;
       }
-    },
-    goAdminPage() {
-      this.$router.push("/admin");
     },
     setInputRoomId(event) {
       this.inputRoomId = event.target.value;
@@ -97,16 +92,16 @@ export default {
       const myId = createUserId();
       const newRoomInfo = {
         host: myId,
-        guest: "",
+        guest: '',
         hostUserName: this.userName,
-        guestUserName: "",
+        guestUserName: '',
         hostHandicap: 0,
         guestHandicap: 0,
         handicap: 0,
-        turn: "none",
+        turn: 'none',
         board: initBoard(),
-        status: "",
-        pass: "",
+        status: '',
+        pass: '',
       };
 
       await setRoomInfo(roomId, newRoomInfo);
@@ -115,33 +110,33 @@ export default {
         myId,
         roomInfo: newRoomInfo,
       });
-      this.$router.push("/handicap");
+      this.$router.push('/handicap');
     },
     async enterRoom() {
-      if (this.inputRoomId === "") {
-        this.errorHandle("idを入力してください");
+      if (this.inputRoomId === '') {
+        this.errorHandle('idを入力してください');
         return;
       }
 
       const roomId = this.inputRoomId;
       const roomInfo = await getRoomInfo(this.inputRoomId);
       if (!roomInfo) {
-        this.errorHandle("入力された部屋idは存在しません");
+        this.errorHandle('入力された部屋idは存在しません');
         return;
       }
       const guestId = this.generateGuestId(roomInfo.host);
 
-      if (roomInfo.guest !== "") {
-        this.errorHandle("観戦モードで参加します");
+      if (roomInfo.guest !== '') {
+        this.errorHandle('観戦モードで参加します');
         this.setAudience();
-        this.$router.push("/game");
+        this.$router.push('/game');
       } else if (!guestId) {
-        this.errorHandle("もう一度お試しください");
+        this.errorHandle('もう一度お試しください');
       } else {
         roomInfo.guest = guestId;
         roomInfo.guestUserName = this.userName;
         roomInfo.turn = roomInfo.host;
-        roomInfo.status = "running";
+        roomInfo.status = 'running';
 
         await setRoomInfo(roomId, roomInfo);
         this.setData({
@@ -149,7 +144,7 @@ export default {
           myId: guestId,
           roomInfo,
         });
-        this.$router.push("/handicap");
+        this.$router.push('/handicap');
       }
     },
   },
