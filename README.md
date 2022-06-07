@@ -11,6 +11,7 @@ Collaborator: [OhVIton](https://github.com/OhVIton)
 ## このプロジェクトについて
 Nuxt.js と Firebase を使って制作したオンライン対戦型オセロゲームです。
 この [URL](https://pl-reversi.web.app) から実際にプレイできます。<br/>
+
 ユーザー名のバリデーションやレスポンシブ対応などは、今後実装する予定です。
 
 <p align="right">(<a href="#top">back to top</a>)</p>
