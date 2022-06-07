@@ -9,75 +9,34 @@ Collaborator: [OhVIton](https://github.com/OhVIton)
 
 <!-- ABOUT THE PROJECT -->
 ## このプロジェクトについて
-大学の実践型授業「プロジェクトラーニング」で作成したオンライン対戦型オセロゲームです。<br/>
-この [URL](https://pl-reversi.web.app) から実際にプレイすることができます。<br/>
+Nuxt.js と Firebase を使って制作したオンライン対戦型オセロゲームです。
+この [URL](https://pl-reversi.web.app) から実際にプレイできます。<br/>
+ユーザー名のバリデーションやレスポンシブ対応などは、今後実装する予定です。
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## 遊び方
 ### ホスト側（ルームを作る側）
-1. 「部屋を作る」をクリックして、新しく部屋を立てます。
-2. ゲスト側に、画面上に表示されている4桁の「ルームID」を教えて下さい。
+1. 自分の好きなユーザー名を入力します。
+2. 「部屋を作る」をクリックして、新しく部屋を立てます。
+3. 自分が欲しいハンディキャップを選択してください。
+4. ゲスト側に、画面上に表示されている4桁の「ルームID」を教えて下さい。
+5. ゲストが入室すると対局が始まります。
 
 ### ゲスト側（ルームに入る側）
-1. ホストに教えてもらった「ルームID」を入力してください。
+1. ホストに教えてもらった「ルームID」と自分の好きなユーザー名を入力してください。
+2. 「部屋に入る」をクリックして、部屋に入ります。
+3. 自分が欲しいハンディキャップを選択してください。
+4. 対局が始まります。
+
+### 管理者ページ
+1. パスワード（hello）を入力してログインします。
+2. 現在DB上にあるルームの情報を自由に書き換えることが出来ます。
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
-## Getting Started
-### Prerequisites
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+## スクリーンショット
 
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-- [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
