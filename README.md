@@ -12,7 +12,7 @@ Collaborator: [OhVIton](https://github.com/OhVIton)
 Nuxt.js と Firebase を使って制作したオンライン対戦型オセロゲームです。
 この [URL](https://pl-reversi.web.app) から実際にプレイできます。<br/>
 
-ハンデ機能が付いており、両プレイヤーがゲーム開始時に欲しいハンデを選択する仕組みになっています。
+ハンデ機能が付いており、両プレイヤーがゲーム開始時に欲しいハンデを選択し、折衝する仕組みになっています。
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
