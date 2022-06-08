@@ -1,12 +1,5 @@
 [
   {
-    "name": "admin",
-    "path": "/admin",
-    "component": "/Users/riku/Desktop/reversi/pages/admin.vue",
-    "chunkName": "pages/admin",
-    "_name": "_df166a1c"
-  },
-  {
     "name": "game",
     "path": "/game",
     "component": "/Users/riku/Desktop/reversi/pages/game.vue",

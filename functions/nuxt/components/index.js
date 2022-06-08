@@ -1,4 +1,3 @@
-export const AdminSquare = () => import('../../components/AdminSquare.vue' /* webpackChunkName: "components/admin-square" */).then(c => wrapFunctional(c.default || c))
 export const Message = () => import('../../components/Message.vue' /* webpackChunkName: "components/message" */).then(c => wrapFunctional(c.default || c))
 export const Square = () => import('../../components/Square.vue' /* webpackChunkName: "components/square" */).then(c => wrapFunctional(c.default || c))
 
