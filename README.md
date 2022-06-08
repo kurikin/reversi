@@ -12,7 +12,7 @@ Collaborator: [OhVIton](https://github.com/OhVIton)
 Nuxt.js と Firebase を使って制作したオンライン対戦型オセロゲームです。
 この [URL](https://pl-reversi.web.app) から実際にプレイできます。<br/>
 
-ユーザー名のバリデーションやレスポンシブ対応などは、今後実装する予定です。
+ハンデ機能が付いており、両プレイヤーがゲーム開始時に欲しいハンデを選択する仕組みになっています。
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -30,16 +30,21 @@ Nuxt.js と Firebase を使って制作したオンライン対戦型オセロ�
 3. 自分が欲しいハンディキャップを選択してください。
 4. 対局が始まります。
 
-### 管理者ページ
-1. パスワード（hello）を入力してログインします。
-2. 現在DB上にあるルームの情報を自由に書き換えることが出来ます。
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## 使用技術
+* [Nuxt.js](https://nuxtjs.org)
+* [Realtime Database](https://firebase.google.com/products/realtime-database)（盤面情報の管理DB）
+* [Firebase Hosting](https://firebase.google.com/docs/hosting)（ホスティング）
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## スクリーンショット
 <div>
-  <img width="43%" src="screenshot-1.png" />
-  <img width="43%" src="screenshot-2.png" />
+  <img width="43%" src="images/screenshot-1.png" />
+  <img width="43%" src="images/screenshot-2.png" />
+  <img width="43%" src="images/screenshot-3.png" />
+  <img width="43%" src="images/screenshot-4.png" />
 </div>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
